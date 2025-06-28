@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café lab</title>
+    <link rel="stylesheet" href="../cafe lab-beta/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Café lab</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+    <section id="home" class="section home-section">
+        <div class="container">
+            <h1>Welcome to Café lab</h1>
+            <p>Your cozy spot for coffee, pastries, and connection.</p>
+        </div>
+    </section>
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Café lab is a community hub for students, professionals, and families. We offer high-quality coffee, fresh pastries, and a welcoming atmosphere for all.</p>
+        </div>
+    </section>
+    <section id="menu" class="section menu-section">
+        <div class="container">
+            <h2>Menu</h2>
+            <ul class="menu-list">
+                <li><strong>Espresso</strong> - Rs299</li>
+                <li><strong>Cappuccino</strong> - Rs350</li>
+                <li><strong>Latte</strong> - Rs399</li>
+                <li><strong>Mocha</strong> - Rs499</li>
+                <li><strong>Fresh Pastries</strong> - Rs250</li>
+                <li><strong>Sandwiches</strong> - Rs580</li>
+            </ul>
+        </div>
+    </section>
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://cdn.pixabay.com/photo/2017/06/22/15/21/latte-art-2431160_1280.jpg" alt="Coffee 1" class="gallery-img">
+                <img src="https://cdn.pixabay.com/photo/2020/02/07/21/06/coffee-4828393_1280.jpg" alt="Coffee 2" class="gallery-img">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/05/07/breads-1867459_1280.jpg" alt="Pastry 1" class="gallery-img">
+                <img src="https://cdn.pixabay.com/photo/2014/10/04/07/40/cafe-472656_1280.jpg" alt="Cafe Interior" class="gallery-img">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2>Contact</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="userName" placeholder="Your Name" required>
+                <input type="email" id="userEmail" placeholder="Your Email" required>
+                <textarea id="userMessage" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="successMessage" style="display: none; color: green; text-align: center; margin-top: 20px;">
+                Thank you! Your message has been sent successfully.
+            </div>
+            <div id="errorMessage" style="display: none; color: red; text-align: center; margin-top: 20px;">
+                Sorry, there was an error sending your message. Please try again.
+            </div>
+            <div class="contact-info">
+                <p><strong>Address:</strong> 123 Coffee St, Your City</p>
+                <p><strong>Email:</strong> info@cafelab.com</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Café lab. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../cafe lab-beta/scripts.js"></script>
+</body>
+</html>
